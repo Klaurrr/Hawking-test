@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(122, 92, 250, 0.2);
+
+    .wrapper {
+        padding: 0px 98px;
+
+
+        width: 760px;
+        height: 1200px;
+
+        background: #FFFFFF;
+    }
+}

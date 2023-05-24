@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+
+    .checkbox {
+        display: none;
+    }
+
+    .label {
+        display: flex;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        cursor: pointer;
+        user-select: none;
+
+        &:before {
+            content: "";
+
+            width: 22px;
+            height: 22px;
+
+            border: 1px solid #CCCCCC;
+            border-radius: 8px;
+
+            margin-right: 16px;
+
+
+        }
+    }
+
+
+    .checkbox:checked+.label:before {
+        background-image: url("../../assets/Checkmark.png");
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+}

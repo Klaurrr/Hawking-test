@@ -1,0 +1,52 @@
+.container {
+    margin-top: 32px;
+
+
+
+    div {
+
+        &:nth-child(2) {
+            margin: 32px 0px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            display: inline-flex;
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                width: 22px;
+                height: 22px;
+                border: 1px solid #CCCCCC;
+                border-radius: 32px;
+                margin-right: 16px;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 32px;
+                background: #7A5CFA;
+                top: 6px;
+                left: 6px;
+                visibility: hidden;
+            }
+        }
+
+        input[type="radio"]:checked+label::after {
+            visibility: visible;
+        }
+    }
+}

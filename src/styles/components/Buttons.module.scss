@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    button {
+        width: 172px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 24px;
+        border: 1px solid #7A5CFA;
+        border-radius: 8px;
+        background: none;
+        cursor: pointer;
+        color: #7A5CFA;
+
+        &:last-child {
+            background: #7A5CFA;
+            color: #FFF;
+        }
+    }
+}
